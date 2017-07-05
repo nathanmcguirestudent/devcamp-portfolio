@@ -1,11 +1,12 @@
 class PortfoliosController < ApplicationController
- def index
-   @portfolio_items = Portfolio.all
- end
+  def index
+    @portfolio_items = Portfolio.all
+  end
  
- def angular
-   @angular_portfolio_items = Portfolio.angular
- 
+  def angular
+    @angular_portfolio_items = Portfolio.angular
+  end
+  
  def new
   @portfolio_item = Portfolio.new
  end
@@ -24,7 +25,6 @@ class PortfoliosController < ApplicationController
   
   def edit 
     @portfolio_item = Portfolio.find(params[:id])
-  
   end
   
   def update
@@ -51,6 +51,4 @@ class PortfoliosController < ApplicationController
       format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully destroyed.' }
    end 
   end
- end
 end
-

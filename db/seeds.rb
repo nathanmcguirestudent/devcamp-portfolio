@@ -1,14 +1,13 @@
 3.times do |topic|
   Topic.create!(
-   title: "Topic #{topic}" 
-  )
-    
+    title: "Topic #{topic}" 
+  )  
 end
 
 puts "3 Topics Created"
 
 10.times do |blog|
-  blog.create!(
+  Blog.create!(
     title: "my blog post #{blog}",
     body: "But I must explain to you how all this mistaken idea
     of denouncing pleasure and praising pain was born and I will
@@ -28,14 +27,12 @@ puts "3 Topics Created"
     topic_id: Topic.last.id
     )
     
-    puts "10 blog posts created"
-    
 end
 
 5.times do |skill|
-  skill.create!(
+  Skill.create!(
     title: "rails #{skill}",
-    percent_untilized: 15
+    percent_utilized: 15
     )
   end
   
@@ -47,7 +44,7 @@ end
       subtitle: "Ruby on rails",
       body: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
       main_image: "http://via.placeholder.com/600x400",
-      thumb_image: "http://via.placeholder.com/350x200",
+      thumb_image: "http://via.placeholder.com/350x200"
       )
   end
   
@@ -57,7 +54,7 @@ end
       subtitle: "Angular",
       body: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
       main_image: "http://via.placeholder.com/600x400",
-      thumb_image: "http://via.placeholder.com/350x200",
+      thumb_image: "http://via.placeholder.com/350x200"
       )
   end
   
